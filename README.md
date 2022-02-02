@@ -31,7 +31,7 @@ make
 2. Lint
 ```sh
 make lint
-# already runs styling before linting
+# also runs styling check before linting
 ```
 3. Style
 ```sh

@@ -6,10 +6,12 @@ test:
 
 style:
 	@echo "\nRunning stylua...\n"
-	stylua --check .
+	stylua .
 
-lint: style
+lint:
 	@echo "\nRunning luacheck\n"
 	luacheck src/*
+	@echo "\nRunning stylua check...\n"
+	stylua --check .
 
 .PHONY: test lint style
